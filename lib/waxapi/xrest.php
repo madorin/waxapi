@@ -6,7 +6,7 @@ public $Blink;
 public $Recid;
 
 private function Query(&$H) {
-	$Q = DB\Query($H['query'], isset($H['param']) ? $H['param'] : NULL, IBASE_TEXT);
+	$Q = DB\Query($H['query'], isset($H['params']) ? $H['params'] : NULL, IBASE_TEXT);
 	return $Q;
 }
 
